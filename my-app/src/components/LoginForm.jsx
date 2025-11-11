@@ -10,7 +10,7 @@ const [submitted, setSubmitted] = useState(false);
 const handleSubmit = (e) => {
     e.preventDefault();
     setSubmitted(true);
-}  
+}   
 
     return (
         <>
