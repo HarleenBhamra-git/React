@@ -1,4 +1,5 @@
 import { useState } from "react";
+import * as z from "zod";
 
 export default function LoginForm() {
 const [name, setName] = useState('');
@@ -8,6 +9,7 @@ const [password, setPassword] = useState('');
 const [submitted, setSubmitted] = useState(false);
 
 const handleSubmit = (e) => {
+    if(!name || !email || !password) return;
     e.preventDefault();
     setSubmitted(true);
 }   
